@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    height: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    transition: height 0.2s ease-in;
+}
+.burger{
+    display: none;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    
+}
+.burger div{
+    display: flex;
+    flex-direction: column;
+    height: 3px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 5px 3px;
+}
+nav ul{
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 65px;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    margin: 20px;
+}
+nav ul li:hover{
+    color: blue;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.brand img{
+    height: 50px;
+    margin: 0px 10px 0px 0px;
+    overflow: hidden;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.container{
+    min-height: 66vh;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid magenta;
+    padding: 15px 30px;
+    background: url("bg.jpg");
+    background-size: cover;
+
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    height: 35px;
+    margin: 10px 5px 0px 5px;
+    cursor: pointer;
+}
+.songItem{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    height: 32px;
+    width: 350px;
+    margin: 3px 0px;
+    border-radius: 5px;
+}
+.songItem:hover{
+    background-color: rgb(0, 212, 240);
+    transition-duration: 0.2s;
+}
+.songItem img{
+    height: 25px;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+.songListPlay{
+    display: flex;
+    align-items: center;
+}
+.songListPlay img{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+#gif{
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
